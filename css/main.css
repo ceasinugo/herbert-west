@@ -1,10 +1,17 @@
 /* HM#4 Create CSS file*/
 html {
-  font-size: 15px;
+  font-size: 16px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /*Width & height are calculated by adding border + padding + content NOT just content which is the default*/
+  box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -21,6 +28,20 @@ nav svg {
   height: 50px;
   width: auto;
 }
+
+/* Breadcrumb */
+.breadcrumb {
+  background-color: #70bc4e;
+  color: white;
+  padding: 1em 0.5em;
+}
+
+.breadcrumb>a {
+  font-weight: 700;
+  color: white;  
+  text-decoration: none;
+}
+
 
 /* Footer */
 footer {
